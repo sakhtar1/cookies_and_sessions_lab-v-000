@@ -2,8 +2,7 @@
   <%= product %>
 <% end %>
 
-<%= form_for(controller:"products", action:"add", method:"post") do |f| %>
-  <%= f.label "product" %>
-  <%= f.text_field :product %>
-  <%= f.submit %>
+<%= form_tag(controller:"products", action:"add", method:"post") do %>
+  <input name="product">
+  <input type="submit" value="add to cart">
 <% end %>
