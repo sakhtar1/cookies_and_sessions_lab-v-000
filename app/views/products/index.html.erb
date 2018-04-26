@@ -1,8 +1,8 @@
-<% @cart.each do |product| %>
+<% cart.each do |product| %>
   <%= product %>
 <% end %>
 
-<%= form_for @cart do |f| %>
+<%= form_for(controller:"products", action:"add", method:"post") do |f| %>
   <%= f.label "product" %>
   <%= f.text_field :product %>
   <%= f.submit %>
