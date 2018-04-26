@@ -6,7 +6,7 @@ Rails.application.routes.draw do
    root 'products#index'
   resources :products, only: [:index, :create]
   # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+     post '/'=> 'products#add'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
